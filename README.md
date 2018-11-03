@@ -1,2 +1,2 @@
-# party-v0.1.0
+# party
 Microservico Partidos POO II
