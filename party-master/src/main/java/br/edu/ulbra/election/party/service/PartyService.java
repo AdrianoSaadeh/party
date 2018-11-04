@@ -22,7 +22,7 @@ public class PartyService {
     }
 
     public List<PartyOutput> getAll(){
-        Type electionOutputListType = new TypeToken<List<PartyOutput>>(){}.getType();
+        Type partyOutputListType = new TypeToken<List<PartyOutput>>(){}.getType();
         return modelMapper.map(partyRepository.findAll(), partyOutputListType);
     }
 
