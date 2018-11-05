@@ -2,13 +2,10 @@ package br.edu.ulbra.election.party.service;
 
 import br.edu.ulbra.election.party.output.v1.PartyOutput;
 import br.edu.ulbra.election.party.repository.PartyRepository;
-import br.edu.ulbra.submissoes.exception.UserException;
 import br.edu.ulbra.election.party.exception.GenericOutputException;
 import br.edu.ulbra.election.party.input.v1.PartyInput;
 import br.edu.ulbra.election.party.model.Party;
 import br.edu.ulbra.election.party.output.v1.GenericOutput;
-import br.edu.ulbra.election.party.output.v1.PartyOutput;
-
 import org.apache.commons.lang.StringUtils;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -102,9 +99,9 @@ public class PartyService {
         }
         
         //esse tem que ajustar
-        if (StringUtils.isBlank(partyInput.getNumber())){
-            throw new GenericOutputException("Invalid number");
-        }
+        // if (StringUtils.isBlank(partyInput.getNumber())){
+        // throw new GenericOutputException("Invalid number");
+        //}
         
         
         
